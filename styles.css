@@ -1,0 +1,16 @@
+#map {
+  height: 500px;    /* Let's give our map a height so we can see it. */
+  margin: 0 auto;
+  display: none;
+}
+
+form.city,
+form.landmark{
+  text-align: center;
+}
+form.landmark{
+  display: none;
+}
+input[type='text']{
+  text-align: center;
+}
