@@ -10,7 +10,7 @@ L.tileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png?access
 
 var control = L.Routing.control({
   waypoints: [null],
-  routeWhileDragging: true,
+  routeWhileDragging: true
 }).addTo(map);
 
 var points = new Array;
@@ -21,14 +21,17 @@ map.on("click", function( event ){
   control.setWaypoints(points);
 });
 
-$("p.remove").on("click", function(e){
+$(".remove").on("click", function(e){
   points.splice(points.length - 1, 1);
   control.setWaypoints(points);
 });
-$("p.distance").on("click", function(e){
+$(".distanceGet").on("click", function(e){
   var meters = control._routes[0].summary.totalDistance;
   var miles = meters * 0.000621371192;
   alert(miles.toFixed(2));
+});
+$(".directions").on("click",function(){
+  $("div.leaflet-routing-container").toggle();
 });
 new L.Control.GeoSearch({
   provider: new L.GeoSearch.Provider.Google(),

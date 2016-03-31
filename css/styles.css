@@ -2,3 +2,12 @@
   height: 500px;    /* Let's give our map a height so we can see it. */
   width: 100%;
 }
+.navbar{
+  margin-bottom: 0;
+}
+.navbar-text{
+  margin-right: 2em;
+}
+h2{
+  text-align: center;
+  cursor: pointer;
