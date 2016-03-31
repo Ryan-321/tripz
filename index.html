@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC' rel='stylesheet' type='text/css'>
+    <!-- Leaflet stylesheet -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="css/l.geosearch.css" />
+    <link rel="stylesheet" href="css/leaflet-routing-machine.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <p class="navbar-text">Tripz</p>
+        <p class="navbar-text navbar-right">Distance: <span id="distanceSum">0</span></p>
+      </div>
+    </nav>
+    <div id="map"></div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="remove">Remove Last Point</h2>
+        </div>
+        <div class="col-md-4">
+          <h2 class="distanceGet">Get Distance</h2>
+        </div>
+        <div class="col-md-4">
+          <h2 class="directions">Directions on/off</h2>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   <!-- Leaflet script -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script src="js/l.control.geosearch.js"></script>
+    <script src="js/l.geosearch.provider.google.js"></script>
+    <script src="js/leaflet-routing-machine.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
